@@ -1,0 +1,136 @@
+.grid {
+  display: grid;
+  grid-template-columns: 500px repeat(2, 1fr);
+  grid-auto-rows: 200px 200px 600px;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+section {
+  width: 100%;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #88a45d;
+  padding: 0px;
+  margin-top:10px;
+  margin-bottom: 0px;
+}
+p {
+  font-size: 16px;
+  color: #2b3024;
+  text-align: justify;
+  padding: 10px;
+}
+.flex {
+  display: flex;
+  gap: 10px;
+}
+.flexitem {
+  flex: 1;
+  padding: 10px;
+}
+.gridclass,
+.flexitem {
+  height: 200px;
+  background-color: rgb(242, 178, 199);
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #88a45d;
+}
+[href="https://x.com/bigbangbioinfo"] {
+  color: #88a45d;
+  font-size: 20px;
+  font-weight: bold;
+}
+[href^="karatu"] {
+  color: #88a45d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+[href$="/"] {
+  color: #88a45d;
+  font-size: 20px;
+  font-weight: bold;
+}
+[href*="UTF"] {
+  color: #88a45d;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* p:hover{
+  background-color: #bfd1a3;
+  color: #be48be;
+  border-radius: 10px;
+  padding: 10px;
+} */
+a:visited {
+  color: #872968;
+}
+li:nth-child(even)  {
+  background-color: #94a47c;
+  color: #b313b3;
+  border-radius: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+p::after, h4::after{
+  content: "❤️";
+  font-size: 20px;
+  display: inline-block
+}
+*::selection {
+  background-color: #2f6a78;
+  color: #fff;
+}
+div strong,ol li{
+  background-color: #a56e80;
+  padding: 10px;
+  border-radius: 10px;
+  color: #decda3;
+  list-style: none; 
+}
+a ~lh{
+  color: #72973a;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+section {
+  background-color: #e2bdc9;
+}
+.writing{
+  color: #6e1a6e;
+} 
+:hover {
+  background-color: #ca1853;
+}
+table:has(caption), th, td {
+  border: 1px solid #88a45d;
+  padding: 10px;
+  width: 600px; 
+}
+ @media (max-width: 650px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+ .animate{
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+ }
+ @keyframes rotate {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }

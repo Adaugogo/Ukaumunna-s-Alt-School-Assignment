@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukaumunna Favour Information Page</title>
+    <title>Ukaumunna Favour Homepage</title>
+    <link rel="stylesheet" href="assets\styles\index.css">
 </head>
-<body id="top" background="assets\Snapchat-45580262.jpg">
 
-    <h1 title="Alt School Information">Basic Information</h1>
-    <p><strong>Name:</strong> Ukaumunna Favour Ugochi</p>
-    <p><strong>Alt School ID:</strong> ALT/SOE/024/3090</p>
-    <hr>
-
-    <section>
-        <h2>Biography</h2>
-        <p>My name is Ukaumunna Favour Ugochi. I am a Youth Corp member in Ogun state and I was posted to Aletheia University where I work as a Graduate Assistant. I am passionate about contributing to health tech in Nigeria, leveraging software engineering and genomics research.</p>
-    </section>
-    <hr>
-
-    <section>
-        <h2>Why I Joined the Program</h2>
-        <p>I joined the Alt School program because I wanted to develop strong technical skills in software engineering and gain exposure to real-world applications that can transform healthcare in Nigeria. The program aligns with my goals of leveraging technology to solve pressing problems in genomics and molecular biology.</p>
-    </section>
-    <hr>
-
-    <section>
-        <h2>Goals for the School of Engineering Program</h2>
-        <p>My primary goals for the School of Engineering program are to:
+<body>
+    <header>
+        <nav class="nav">
+            <h1 style="color: blue;">Home Page</h1>
+            <!--This is so different from Python comments which I am used to!-->
+            <p>Hi guys, I am Ada.</p>
+            <!--Display image-->
+            <img src="assets\Snapchat-45580262.jpg" alt="Ada looking resplendent" height="200">
+            <br>
+            <a href="assets\Snapchat-45580262.jpg" download="">Download the photo</a>
+            <br>
+            <audio src="assets\13-Ric-Hassani-When-I-m-Gone-(JustNaija.com).mp3" controls>Stream my music.</audio>
+            <br>
+            <video src="assets\IMG_2494_001.mp4" height="500" width="250" controls>Here is Ada in her element</video>
+            <div> <!--used as a generic HTML container-->
+                <H1>Hello 1</H1>
+                <h2>Hello 2</h2>
+                <h3>Hello </h3>
+                <h4>Hello</h4>
+                <h5>Hello</h5>
+                <h6>Hello</h6>
+            </div>
+            <p>I am excited about being an <span style="font-size:100px;">AltSchooler</span>. These are my reasons:</p>
             <ol>
-                <li>Build a solid foundation in software engineering and programming.</li>
-                <li>Learn to develop scalable and efficient software solutions for health tech challenges.</li>
-                <li>Contribute to impactful projects that address disparities in healthcare diagnostics and treatments.</li>
+                <li>I am interested in research and gaining tech skills is the bedrock of computational skills I need.
+                </li>
+                <li>I would like for my time to be worth more. By gaining a skill, I am positioning myself for improved
+                    earning potential.</li>
             </ol>
-        </p>
-    </section>
-
-    <p><a href="#top">Go back to top</a></p>
+            <br>
+            <p>I would like to hear from you! </p>
+            <form action="I would like to hear from you!">
+                <label for="name">Please enter your name:</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="submit" value="Send">
+            </form>
+            <a href="./">Home Page</a>
+            <a href="./about/index.html"> About Me</a>
+        </nav>
+    </header>
 </body>
+<footer>
+    <p id="footer-p">This is a footer</p>
+</footer>
+
 </html>

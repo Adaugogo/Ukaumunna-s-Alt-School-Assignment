@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+
+<body>
+    <a href="//google.com" target="_blank">Google</a>
+    <a href="//google.com" target="_self">Google</a>
+    <a href="//google.com" target="_top">Google</a>
+    <a href="//google.com" target="_parent">Google</a>
+    <a href="//google.com">Google</a>
+
+    <form action='practice.html' method="post">
+        Name:<input type="text" name="name" id="name" placeholder="Enter your name">
+        E-mail:<input type="email" name="email" id="email" placeholder="Enter your email">
+
+        <br>
+        <br>
+        <strong>Gender:</strong> <br><input type="radio" name="radiorodeo" id="male" value="male">Male <br>
+        <input type="radio" name="radiorodeo" id="female" value="female">Female
+        <br><br>
+        <strong>Choose the courses you did in UNN:</strong> <br>
+        <input type="checkbox" name="checkbox" id="immunology" value="immunology">Immunology <br>
+        <input type="checkbox" name="checkbox" id="molecular_biology" value="molecular_biology">Molecular Biology <br>
+        <input type="checkbox" name="checkbox" id="genetics" value="genetics">Genetics
+        <br> <br>
+        <strong>Choose your favourite lecturer: </strong><br>
+        Lecturer names:
+        <select name="select" id="select">
+            <option value="option">Dr. Nwankwo</option>
+            <option value="option" selected>Dr. Nwan</option>
+            <option value="option">Dr. Nwankwoboko</option>
+        </select>
+        <br><br>
+        <strong>Tell us about your experience in UNN: </strong><br>
+        <textarea name="tellus" id="tellus" placeholder="Tell Us" wrap="hard"></textarea>
+        <br>
+        <strong>Password:</strong>
+        <br>
+        <input type="password" name="password" id="password" placeholder="Please input your password">
+        <br><br>
+        <strong>Date of birth:</strong>
+        <input type="date" id="date" name="date"> <br> <br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+    <ol type="i" start="2">
+        <li>Ada</li>
+        <li>Nono</li>
+        <li>Kele</li>
+    </ol>
+    <ul type="circle">
+        <li>Daniel Caesar</li>
+        <li>Doechiiiiii</li>
+    </ul>
+    <ul type="square">
+        <li>Daniel Caesar</li>
+        <li>Doechiiiiii</li>
+    </ul>
+    <section>
+        <dl>
+            <dt><strong>Daniel Caesar</strong></dt>
+            <dd> Some of my <em>favourite</em> songs of DC's include Blessed, Let Me Go, Always, Cyanide. I think he's
+                so <small><del>fucking</del></small> fantastic.</dd>
+            <dt><strong>Doechiiiiii</strong></dt>
+            <dd style="margin: 20px;">
+                <p>I love her music. She's so talented and I love her voice. I recently just discovered her and even
+                    though I am not a fan of rap, I think she's so good and intentional about her craft and I deeply
+                    appreciate that about her. I think she's so fucking fantastic.</p>
+            </dd>
+        </dl>
+    </section>
+    <pre>
+        Ada       Chinonso       Kelechi
+        Favour    Peace          Destiny
+        Ukaumunna                We all love each other.
+    </pre>
+    <!-- Practicing my table skills -->
+    <table border="1" bordercolor="green" cellspacing="1" cellpadding="10" width="600">
+
+        <tr>
+            <th>Name</th>
+            <th bgcolor="yellow">Position</th>
+            <th>Department</th>
+        </tr>
+
+        <tr>
+            <td>Jack Mccalister</td>
+            <td>CEO</td>
+            <td>Executive</td>
+        </tr>
+        <tr>
+            <td>Jane March</td>
+            <td bgcolor="green">President</td>
+            <td>Executive</td>
+        </tr>
+        <tr>
+            <td>Shane Dans</td>
+            <td>IT Manager</td>
+            <td>Data Processing</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>Lovely</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+
+    <!-- More complicated tables -->
+    <table border="1" cellpadding="10" width="600">
+        <caption>
+            <h1>Table 2</h1>
+        </caption>
+        <thead>
+            <tr>
+                <td colspan="3">Science</td>
+                <td colspan="3">Genetics</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Botany</td>
+                <td>Zoology</td>
+                <td>Bacteriology</td>
+            </tr>
+            <tr>
+                <td>Entomology</td>
+                <td>Ontology</td>
+                <td>Ecology</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <table border="1" cellpadding="10" width="600">
+        <caption>
+            <h1>Table 3</h1>
+        </caption>
+        <tbody>
+            <tr>
+                <td rowspan="3">Science</td>
+                <td>Biology</td>
+            </tr>
+            <tr>
+                <td>Zoology</td>
+                <td>Botany</td>
+            </tr>
+            <tr>
+                <td>Bacteriology</td>
+                <td>Entomology</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <table border="1" cellpadding="10" width="600">
+        <caption>
+            <h1>Table 4</h1>
+        </caption>
+        <tr>
+            <td>R1A</td>
+            <td rowspan="2" colspan="2">Merged Rows 1&2 B&C</td>
+        </tr>
+        <tr>
+            <td>R2A</td>
+        </tr>
+        <tr>
+            <td>R3A</td>
+            <td>R3B</td>
+            <td>R3C</td>
+    </table>
+    <br>
+    <br>
+
+    <table border="1" cellpadding="10" width="100%">
+        <thead>
+            <tr>
+                <td width="33%">
+                    <img src="assets\Snapchat-45580262.jpg" alt=" A picture of the developer" width="100%">
+                </td>
+                <td>
+                    <h2>LINKS</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Novels</li>
+                        <li>Songs</li>
+                    </ul>
+                </td>
+                <td width="40%">
+                    <table border="1" align="center " bordercolor="green" cellspacing="1" cellpadding="10" width="50%">
+                        <caption>
+                            <h2>Coporate Heads</h2>
+                        </caption>
+                        <thead>
+                            <th>Name</th>
+                            <th bgcolor="yellow">Position</th>
+                            <th>Department</th>
+                        </thead>
+                        <tr>
+                            <td>Jack Mccalister</td>
+                            <td>CEO</td>
+                            <td>Executive</td>
+                        </tr>
+                        <tr>
+                            <td>Jane March</td>
+                            <td bgcolor="green">President</td>
+                            <td>Executive</td>
+                        </tr>
+            <tr>
+                <td>Shane Dans</td>
+                <td>IT Manager</td>
+                <td>Data Processing</td>
+            </tr>
+    </table>
+    </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    </table>
+    <br>
+    
+        <h3 >Top Dog Breeds</h3>
+        <p text-align="left"> A Siberian Husky is a working dog with various coat markings and colors. The Pug is a breed with a wrinkly face,
+            short square muzzle, and curly tail. The German Shepherd Dog is an
+            intelligent working dog with a protective attitude.</p>
+    </font>
+</body>
+
+</html>
