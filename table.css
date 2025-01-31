@@ -1,0 +1,12 @@
+table{
+    box-sizing: border-box;
+    max-width: 600px;
+    padding: 20px;
+    border: 10px solid rgb(231, 168, 161);
+    margin:25px auto;
+}
+th, tr , td{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+}

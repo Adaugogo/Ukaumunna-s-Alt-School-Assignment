@@ -1,0 +1,76 @@
+/*  to style attributes: in this case, links.*/
+[href]{
+    color:red
+}
+/* to style a specific link */
+
+[href="https://x.com/bigbangbioinfo"]{
+    color:rgb(191, 151, 33);
+    font-size: 30px;
+}
+
+/* to modify a selector, can't seem to figure if it for all selectors of just element */
+a:hover{
+    color:blue;
+    text-transform: uppercase;
+}
+
+/* pseudo classes */
+body:nth-child(even){
+    border: 2px solid rgb(170, 216, 170)
+}
+
+/* Pseudo elements */
+a::after{
+    content: '❤️';
+    border: 2px solid red;
+}
+p span {
+    color: rgb(185, 198, 166);
+    text-transform: uppercase;
+}
+
+/* direct child not descendant */
+ul>li{
+    color: rgb(186, 212, 148);
+   font-style: italic;
+}
+
+/* selects adjacent elements */
+a +p {
+    border: 12px solid red;
+}
+
+caption~li{
+    color: rgb(27, 197, 248);
+    font-style: italic;
+}
+.container {
+    padding: 20px;
+    .title {
+      color: rgb(153, 87, 87);
+    }
+    &:hover {
+      background-color: lightblue;
+    }
+  }
+
+/* appaz, the element has to be deeper into the DOM tree and not adjacent. */
+ul:has(strong) {
+    color: rgb(41, 136, 195);
+    font-style: italic;
+}
+
+:is(ul,h1){
+    border:2px solid rgb(41, 136, 195);
+    padding:100px 100px 100px 100px;
+    background-color: rosybrown;
+}
+h1 {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+  margin: 3px;
+}
+
